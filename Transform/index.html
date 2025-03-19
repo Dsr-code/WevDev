@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            border: 2px solid purple;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            width: 100vw;
+            height: 80vh;
+            
+        }
+        
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            height: 90px;
+            width: 90px;
+            /* transform: rotateX(45deg) skewX(45deg) rotatey(89deg); */
+            /* transform: translateY(50px) */
+            background-color: grey;
+
+        }
+
+        
+
+        .scale:hover{
+            transform: scale(1.5);
+            transition: all ease 0.5s;
+            background-color: aqua;
+        }
+        
+        .translateX:hover{
+            transform: translateX(40px);
+            transition: all ease 0.5s;
+            background-color: aqua;
+
+        }
+
+        .rotate:hover{
+            transform: rotate(270deg);
+            transition: all ease 0.5s;
+            background-color: aqua;
+        }
+
+        .skew:hover{
+            transform: skew(25deg);
+            transition: all ease 0.5s;
+            background-color: aqua;
+        }
+
+        .matrix:hover{
+            transform:matrix(1, -0.3, 0, 1, 0, 0);
+            transition: all ease 0.5s;
+            background-color: aqua;
+        }
+
+        h1{
+            background:linear-gradient(to right,purple, red, yellow, orange);
+            text-align: center;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transform Properties</h1>
+    <div class="con">
+        
+        <div class="box scale">
+            Scale
+        </div>
+        <div class="box translateX">
+            translateX
+        </div>
+        <div class="box rotate">
+            Rotate
+        </div>
+        <div class="box skew">
+            Skew
+        </div>
+        <div class="box matrix">
+            Matrix
+        </div>
+    </div>
+</body>
+</html>
